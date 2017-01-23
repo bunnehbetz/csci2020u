@@ -1,6 +1,7 @@
 apply plugin: 'java'
 sourceCompatibility = 1.7
 version = '1.0'
+
 jar {
     manifest {
         attributes('Main-Class': 'csci2020u.lab02.SimpleTest',
@@ -8,7 +9,16 @@ jar {
                    'Implementation-Version': version)
     }
 }
+
 task(run, dependsOn: 'classes', type: JavaExec) {
     main = 'csci2020u.lab02.SimpleTest'
     classpath = sourceSets.main.runtimeClasspath
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    ccompile 'org.apache.commons:commons-csv:1.4'
 }

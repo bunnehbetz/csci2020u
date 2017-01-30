@@ -20,5 +20,5 @@ repositories {
 }
 
 dependencies {
-    ccompile 'org.apache.commons:commons-csv:1.4'
+    compile 'org.apache.commons:commons-csv:1.4'
 }

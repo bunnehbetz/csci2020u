@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane alignment="center" hgap="10" prefHeight="300.0" prefWidth="600.0" vgap="10" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <TableView fx:id="idTable" prefHeight="300.0" prefWidth="600.0">
+        <columns>
+          <TableColumn id="idStudentID" fx:id="idStudentID" prefWidth="75.0" text="SID" />
+          <TableColumn fx:id="idAssignments" prefWidth="75.0" text="Assignments" />
+            <TableColumn fx:id="idMidterm" prefWidth="75.0" text="Midterm" />
+            <TableColumn fx:id="idFinalExam" prefWidth="75.0" text="Final Exam" />
+            <TableColumn fx:id="idFinalMark" prefWidth="75.0" text="Final Mark" />
+            <TableColumn fx:id="idLetterGrade" prefWidth="75.0" text="Letter Grade" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </children>
+</GridPane>
